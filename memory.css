@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(17, 17, 17);
+    color: white
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+main {
+    height: 90vh;
+    width: 99%;
+    border: 1px solid black;
+    margin-left: 10px;
+  
+
+}
+
+.sessao1{
+    height: 49%;
+    border: 1px solid black;
+    background-color: rgb(46, 119, 62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 9s;
+    
+}
+
+.sessao_atencao{
+    height: 49%;
+    border: 1px solid black;
+    background-color: rgb(73, 116, 83);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sessao2{
+    height: 49%;
+    border: 1px solid black;
+    margin-top: 18px;
+    background-color: rgb(46, 119, 62);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div {
+    width: 10%;
+    height: 78%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
