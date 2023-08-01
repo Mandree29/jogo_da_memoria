@@ -21,11 +21,18 @@ main {
     border: 1px solid black;
     background-color: rgb(46, 119, 62);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     transition: background-color 9s;
     
-}
+} 
+
+/* .sessao1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(40%, 1fr))
+} */
 
 .sessao_atencao{
     height: 49%;
@@ -37,7 +44,7 @@ main {
 }
 
 .sessao2{
-    height: 49%;
+    height: 51%;
     border: 1px solid black;
     margin-top: 18px;
     background-color: rgb(46, 119, 62);
@@ -48,10 +55,71 @@ main {
 
 div {
     width: 10%;
-    height: 78%;
+    height: 60%;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+img{
+    align-self: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .sessao1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-template-rows: repeat(auto-fit, 50%);
+        justify-content: center;
+        align-items: center;
+  }
+
+  .sessao2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto-fit, 50%);
+  }
+
+  div {
+    width: max-content;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+}
+
+@media screen and (max-width: 440px){
+    .sessao1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 70px);
+        grid-template-rows: repeat(auto-fit, 50%);
+        justify-content: center;
+        align-items: center;
+
+  }
+
+  .sessao2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 70px);
+    grid-template-rows: repeat(auto-fit, 50%);
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    width: max-content;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin: 0;
+}
 }
 
